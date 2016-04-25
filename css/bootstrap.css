@@ -311,12 +311,18 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+  margin-top: 10px;
   display: block;
   max-width: 100%;
   height: auto;
 }
 .img-rounded {
   border-radius: 6px;
+  border: 1px solid #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
 .img-thumbnail {
   padding: 4px;
@@ -363,7 +369,7 @@ h6,
 .h6 {
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.4;
   color: inherit;
 }
 h1 small,
