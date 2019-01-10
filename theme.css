@@ -300,7 +300,12 @@ template {
 [hidden] {
   display: none !important; }
 .logo {
-  width: 50px;
+  /*width: 50px;*/
+  height: 100%;
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -5356,6 +5361,10 @@ button.bg-dark:focus {
 
 .p-4 {
   padding: 2.25rem !important; }
+.p-4nlr{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 
 .pt-4,
 .py-4 {

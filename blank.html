@@ -13,31 +13,32 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container"> <a class="navbar-brand" href="#">
-        <i class="fa d-inline fa-lg fa-circle-o"></i>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom: 0px;padding-top: 0px;margin-bottom: 0px;">
+    <div class="container"> <a class="navbar-brand" style="height: 20px;" href="#">
+        <!-- <i class="fa d-inline fa-lg fa-circle-o"></i> -->
         <b>zenvisage: A System for Effortless Visual Exploration of Large Datasets</b>
       </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar11">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Use Cases</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Publications</a> </li>
-        </ul> <a class="btn btn-primary navbar-btn ml-md-2">Contact us</a>
+          <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#features">Features</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#usecase">Use Cases</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#publications">Publications</a> </li>
+        </ul> <a class="btn btn-primary navbar-btn ml-md-2" href="#contact">Contact us</a>
       </div>
     </div>
   </nav>
+  <a name="about"></a>
   <div class="py-5 text-center" style="background-image: url('https://static.pingendo.com/cover-bubble-dark.svg');background-size:cover;">
     <div class="container">
       <div class="row">
         <div class="bg-white p-5 mx-auto col-md-12 col-10" style="">
           <!-- <p class="mb-3 lead" contenteditable="true">A System for Effortless Visual Exploration of Large Datasets</p> -->
           <h4 class="" style="">Do you have large amounts of data but struggle to make sense of this data?</h4>
-          <h4 class="" contenteditable="true">Still generating thousands of visualizations manually and browsing through each one-at-a-time?&nbsp;</h4>
-          <h4 class="">What if you could directly skip through this&nbsp; tedious and time-consuming process and get&nbsp;to the insights directly?&nbsp;</h4>
+          <h4 class="" contenteditable="true">Still generating thousands of visualizations manually and browsing through each one at a time?&nbsp;</h4>
+          <h4 class="">What if you could directly skip through this&nbsp; tedious process and get&nbsp;to the insights directly?&nbsp;</h4>
           <h3 class="display-3"><img style="width: 170px;" src="images/zenvisage01cropped.png"></img><br></h3>
           <b>
               <h4 class="" style=""><b>&nbsp;Zenvisage fast-forwards users to desired insights by automatically identifying and recommending interesting visualizations.&nbsp;</b></h4>
@@ -59,32 +60,31 @@
       </div>
     </div>
   </div>
-  <div class="py-5">
+  <div class="text-center py-5">
+    <a name="features"></a>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Key Features</h1>
+          <h1><b>Key Features</b></h1>
         </div>
       </div>
       <div class="row d-flex justify-content-between">
-        <div class="col-md-4 col-lg-3 p-4" style=""> <img class="img-fluid d-block" src="demo/sketch_demo.gif" width="1500">
-          <h4 class="my-3"> <b>Sketch a Pattern of Interest</b></h4>
-          <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+        <div class="col-md-4 col-lg-3 p-4 p-4nlr"> <img class="img-fluid d-block" src="demo/sketch_demo.gif" width="1500" style="max-width: 57%;margin-left: 20%;">
+          <h4 class="my-3"> <b>Pattern Sketching</b></h4>
+          <p class="text-left" style="width: 110%;">In Zenvisage, you can look for visualizations of interest by sketching the desired pattern on the querying canvas. For example, searching for cities with housing prices that rises in the beginning of the year then drops in the later part of the year.</p>
         </div>
-        <div class="col-md-4 col-lg-3 p-4"> <img class="img-fluid d-block" src="demo/dragNdrop_demo.gif" width="1500">
-          <h4 class="my-3"> <b>OR Drag-and-Drop a visualization of interest</b></h4>
-          <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+        <div class="col-md-4 col-lg-3 p-4 p-4nlr"> <img class="img-fluid d-block" src="demo/dragNdrop_demo.gif" width="1500" style="max-width: 57%;margin-left: 20%;">
+          <h4 class="my-3"> <b>Drag-and-Drop</b></h4>
+          <p class="text-left" style="width: 110%;">You can also search for visualizations by dragging and dropping a visualization into the query canvas. For example, you can look for other cities that have a similar housing pattern to New York City.</p>
         </div>
-        <div class="col-md-4 col-lg-3 p-4"> <img class="img-fluid d-block" src="demo/browse_demo.gif" width="2500">
-          <h4 class="my-3"> <b>Browse for desired visualizations</b><br></h4>
-          <p>I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.</p>
+        <div class="col-md-4 col-lg-3 p-4 p-4nlr"> <img class="img-fluid d-block" src="demo/browse_demo.gif" width="1500" style="margin-left: -5%;">
+          <h4 class="my-3"> <b>Rank and Browse</b><br></h4>
+          <p class="text-left" style="width: 110%;">Given a queried pattern, Zenvisage displays a ranked list of visualizations based on how simmilar the visualization is to the queried pattern. We also recommend representative trends and outliers to highlight the different types of patterns in the dataset.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8">
-          <p class="lead" contenteditable="true">Zenvisage has many more features, including -------. </p>
-        </div>
-        <div class="col-md-4"><a class="btn btn-primary" href="https://github.com/zenvisage/zenvisage/wiki/Functionalities-and-Options">See More</a></div>
+      <div class="row" style="margin-top: -20px;">
+        <a class="btn btn-primary" href="https://github.com/zenvisage/zenvisage/wiki/Functionalities-and-Options" style="margin-left: 50% !important;">Learn More</a>
       </div>
     </div>
   </div>
@@ -94,34 +94,33 @@
         <div class="text-center mx-auto col-md-12">
           <div class="row">
           </div>
+          <a name="usecase"></a>
           <h1><b>Real-World Use Cases</b></h1>
-          <div class="mx-auto col-md-12">
-            <p class="mb-4" contenteditable="true"> Zenvisage is being developed with close collaboration with a number of partners who have large datasets and a pressing need for automated data exploration. We have ------ in this <a href="https://arxiv.org/abs/1710.00763">paper</a>. Here is some example use cases:</p>
+          <div class="text-left mx-auto col-md-12">
+            <h5> Zenvisage has been developed with close collaboration with a number of partners who have large datasets and a pressing need for automated data exploration. Our participatory design process for these use cases in this <a href="https://arxiv.org/abs/1710.00763">paper</a>. Examples include:</h5>
             <div class="row">
               <div class="col-lg-4 col-md-4 p-4 text-center"> <img src="images/matsci.png" height="80px"></img>
                 <p class="mb-1"> <b>Material Science Battery Discovery</b></p>
-                <p class="mb-3"> <i>"I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks."</i> </p>
-                <!-- <p class="mb-0">CEO and founder</p> -->
+                <p class="mb-3 text-left"> Using dynamic classes, scientists can compare characteristics from different data classes to find a solvent datapoint that satisfies desirable properties, such as high-voltage or low solubility. By browsing through patterns in different data classes, they can also study the overall tradeoffs and relationships between data attributes.</p>
               </div>
               <div class="col-lg-4 col-md-4 p-4 text-center"> <img src="images/astro.png" height="80px"></img>
                 <p class="mb-1"><b>Astronomical Transient Discovery</b></p>
-                <p class="mb-3"> <i>"Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!"</i> </p>
-                <!-- <p class="mb-0">Co-founder</p> -->
+              <p class="mb-3 text-left">By sketching a peak-then-decay pattern on the query canvas, astronomers can directly search for potential supernovae candidates. Using interactive filtering, they can also eliminate sources of data anomaly to improve match accuracy for finding candidates.</p>
               </div>
               <div class="col-lg-4 p-4 text-center"> <img src="images/genetics.png" height="80px"></img>
                 <p class="mb-1">
                   <b>Gene Expression Analysis</b></p>
-                <p class="mb-3"> <i>"I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies."</i> </p>
-                <!-- <p class="mb-0">Evangelist</p> -->
+                <p class="mb-3 text-left">Using the recommended representative trends in Zenvisage, geneticists can learn about the characteristic pattern profiles in their dataset. They can also search and browse for genes belonging to the same cluster via drag-and-drop. </p>
               </div>
             </div>
+            <h5> Zenvisage has also users from the following institutions. If you have a potential use case for Zenvisage or are currently using it for your project, we'd love to hear from you. </h5>
             <div class="row text-muted">
-              <div class="col-md-2 col-4 p-2"> <img class="d-block logo" src="images/des.jpg"></img></div>
-              <div class="col-md-2 col-4 p-2"><img class="d-block logo" src="images/kepler.png"></img></div>
-              <div class="col-md-2 col-4 p-2"> <img class="d-block logo" src="images/toyota.jpg"></img></div>
-              <div class="col-md-2 col-4 p-2"> <i class="d-block fa fa-paypal fa-3x"></i> </div>
-              <div class="col-md-2 col-4 p-2"> <i class="d-block fa fa-rebel fa-3x"></i> </div>
-              <div class="col-md-2 col-4 p-2"> <i class="d-block fa fa-first-order fa-3x"></i> </div>
+              <div class="col-md-2 col-4 p-2"> <img class="logo" src="images/des.jpg" style="position: absolute;margin:auto; top:0;bottom:0;"></img></div>
+              <div class="col-md-2 col-4 p-2"><img class="logo" src="images/kepler.png" style="position: absolute;margin:auto; top:0;bottom:0;"></img></div>
+              <div class="col-md-2 col-4 p-2"> <img class="logo" src="images/toyota.png" style="position: absolute;margin:auto; top:0;bottom:0;"></img></div>
+              <div class="col-md-2 col-4 p-2"> <img class="logo" src="images/sdsc.png" style="position: absolute;margin:auto; top:0;bottom:0;"></img> </div>
+              <div class="col-md-2 col-4 p-2"> <img class="logo" src="images/cmu.jpeg" style="position: absolute;margin:auto; top:0;bottom:0;"></img> </div>
+              <div class="col-md-2 col-4 p-2"> <a class="btn btn-primary" href="#contact"">Tell us More</a> </div>
             </div>
           </div>
         </div>
@@ -140,11 +139,12 @@
         </div>
         <div class="p-5 bg-white ml-auto col-md-6 border" style="">
           <h1>Demo</h1>
-          <p class="mb-3">Would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite.</p> <a class="btn btn-primary" href="#" contenteditable="true">Try out our live demo&nbsp;!</a>
+          <p class="mb-3" style="width: 106%;">This demo introduces some functionalities in the latest software release (v3.0) for Zenvisage, including different ways for constructing visual queries to search for patterns of interest, as well as additional features, such as interactive data filtering, dynamic class creation, data smoothing. </p></p> <a class="btn btn-primary" href="#" contenteditable="true">Try out our live demo&nbsp;!</a>
         </div>
       </div>
     </div>
   </div>
+  <a name="contact"></a>
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -155,8 +155,8 @@
           <div class="mx-auto col-md-12">
             <p class="mb-4" contenteditable="true">
             </p>
-            <div class="all-des">
-              <h5> Zenvisage is being developed by a team of undergraduate and graduate students headed by Prof. <a href="http://data-people.cs.illinois.edu">Aditya Parameswaran</a> and Prof. <a href="http://social.cs.uiuc.edu/people/karriekarahalios.html">Karrie Karahalios</a>. The current list of contributors includes (in alphabetical order) Doris Lee, Jaewoo Kim, Jintao Jiang, and Renxuan Wang. Past contributors includes (in alphabetical order) Lijin Guo, John Lee, Changfeng Liu, Albert Kim, Tarique Siddiqui, Chao Wang, Edward Xue, Sean Zou, and Yuxuan Zou. There are other students working on related projects: Silu Huang, Stephen Macke, Sajjadur Rahman, and Tana Wattanawaroon. </h5>
+            <div class="text-left all-des">
+              <h5> Zenvisage is being developed by a team of undergraduate and graduate students headed by Professor <a href="http://data-people.cs.illinois.edu">Aditya Parameswaran</a> and Professor <a href="http://social.cs.uiuc.edu/people/karriekarahalios.html">Karrie Karahalios</a>. The current list of contributors includes (in alphabetical order) Doris Lee, Jaewoo Kim, Jintao Jiang, and Renxuan Wang. Past contributors includes (in alphabetical order) Lijin Guo, John Lee, Changfeng Liu, Albert Kim, Tarique Siddiqui, Chao Wang, Edward Xue, Sean Zou, and Yuxuan Zou. There are other students working on related projects: Silu Huang, Stephen Macke, Sajjadur Rahman, and Tana Wattanawaroon. </h5>
               <h5> Please reach out to <a href="http://dorisjunglinlee.com/">Doris Lee</a> if you'd like to either contribute, or be a beta tester of Zenvisage! </h5>
             </div>
           </div>
@@ -166,6 +166,7 @@
       </div>
     </div>
   </div>
+  <a name="publications"></a>
   <div class="py-5">
     <div class="container">
       <div class="row">
